@@ -145,7 +145,7 @@ print('\napakah kata 1 termasuk numeric semua = ' + str(status1))
 print('\napakah kata 2 termasuk numeric semua = ' + str(status2))
 print('\napakah kata 3 termasuk numeric semua = ' + str(status3))
 
-# l. .isprintable() --> untuk mengecek apakah semua karakter string bisa di-print/ditampilkan secara normal
+# l. .isprintable() --> untuk mengecek apakah semua karakter string bisa di-print/ditampilkan secara normal, \t, \n tidak bisa
 print('\n===== .isprintable =====')
 kata1 = 'Hello World'
 kata2 = 'Hello \tWorld'
