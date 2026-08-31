@@ -209,7 +209,6 @@ print('\n|' + kiri + '|')
 
 # kebalikannya .strip()
 print('\n===== .strip() =====')
-print('\n')
 tengah = 'kiri'.ljust(30)
 print(kiri.strip())
 print(kanan.strip())
