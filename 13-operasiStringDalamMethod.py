@@ -158,4 +158,59 @@ print('\nkata 2 = ' + kata2)
 print('\nkata 3 = ' + kata3)
 print('\napakah kata 1 bisa di-print dengan normal = ' + str(status1))
 print('\napakah kata 2 bisa di-print dengan normal = ' + str(status2))
-print('\napakah kata 3 bisa di-print dengan normal = ' + str(status3) + '\n')
+print('\napakah kata 3 bisa di-print dengan normal = ' + str(status3))
+
+# 4. mengecek komponen startswith() dan endswith()
+
+# startswith('...') --> mengecek apakah string tersebut dimulai dengan kata tertentu
+print('\n===== .startswith(\'...\') =====')
+nama = 'om brill'
+no_hp = '08123456789'
+status = nama.startswith('om')
+status2 = no_hp.startswith('08')
+print('\nnama = ' + nama)
+print('\nnomor hp = ' + no_hp)
+print('\napakah kata ' + nama + ' dimulai dengan kata om = ' + str(status))
+
+# .endswith('...') --> kebalikan dari startswith('...')
+print('\n===== .endswith(\'...\') =====')
+nama = 'om brill ganteng'
+nama_file = 'word.docs'
+status1 = nama.endswith('ganteng')
+status1 = nama_file.endswith('.docs')
+print('\nnama = ' + nama)
+print('\nnama file = ' + nama_file)
+print('\napakah kata ' + nama + 'diakhiri dengan kata ganteng = ' + str(status1))
+print('\napakah kata ' + nama + 'diakhiri dengan kata .docs = ' + str(status2))
+
+# 5. penggabungan beberapa string --> .join()
+# pemisahan beberapa string --> .split()
+print('\n===== .join() =====')
+kata = ['aku', 'sayang', 'adik'] # --> ini namanya list
+gabungan = ",".join(kata)
+print( kata)
+print('\ngabungan = ' + gabungan)
+
+print('\n===== .split() =====')
+print('gabungan = ' + gabungan)
+pisah = gabungan.split(',')
+print(pisah)
+
+# 6. alokasi string .rjust() --> mepet kanan
+# .ljust() --> mepet kiri
+# .center() --> tengah
+print('\n===== posisi string =====')
+kanan = 'kanan'.rjust(30)
+kiri = 'kiri'.ljust(30)
+tengah = 'tengah'.center(30)
+print('\n|' + kanan + '|')
+print('\n|' + tengah + '|')
+print('\n|' + kiri + '|')
+
+# kebalikannya .strip()
+print('\n===== .strip() =====')
+print('\n')
+tengah = 'kiri'.ljust(30)
+print(kiri.strip())
+print(kanan.strip())
+print(tengah.strip())
